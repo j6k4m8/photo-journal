@@ -9,7 +9,7 @@ layout: default
             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <small
             style="font-family: 'Georgia'; font-size: 0.8em; border-top: 10px solid #dedede; width: ">
-            {{ post.timestamp }}<span style="width: {{ post.happy }}em; height: 0; border-top: 9px solid #cceeff; display: inline-block; font-family: 'sans-serif'; text-align: right">happymeter: {{ post.happy }}</span>
+            {{ post.timestamp }}<span style="width: {{ post.happy / 2 }}em; height: 0; border-top: 9px solid #cceeff; display: inline-block; font-family: 'sans-serif'; text-align: right">happymeter: {{ post.happy }}</span>
         </small>
 
         <div class="entry">
