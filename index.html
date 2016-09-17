@@ -3,15 +3,18 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts reversed %}
+    {% for post in site.posts reversed %}
     <article class="post">
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <small>{{ post.timestamp }}</small>
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <small
+            style="font-family: 'Georgia'; font-size: 0.8em; border-top: 10px solid #dedede;">
+            {{ post.timestamp }}
+        </small>
 
-      <div class="entry">
-        {{ post.content }}
-      </div>
+        <div class="entry">
+            {{ post.content }}
+        </div>
     </article>
-  {% endfor %}
+    {% endfor %}
 </div>
